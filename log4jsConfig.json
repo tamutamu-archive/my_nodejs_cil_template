@@ -1,0 +1,15 @@
+{
+  "appenders": {
+    "error": {
+      "type":     "file",
+      "category": "error",
+      "filename": "logs/error.log",
+      "backups": 20,
+      "pattern":  "-yyyy-MM-dd"
+    }
+  },
+  "categories" : {
+    "default" : {"appenders" : ["error"], "level" : "info"}
+  }
+}
+
